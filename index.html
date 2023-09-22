@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <div class="currency__container">
+        <div class="darkmode">
+            <i class="fa-solid fa-moon fa-spin"></i>
+        </div>
+        <img src="images/currencyimage.jpg" alt="">
+        <h1>Currency Converter</h1>
+        <div class="currency__converter__operation">
+            <input type="number" id="amount" placeholder="Enter The Amount">
+            <div class="currencies">
+                <select name="" id="fromCurrencySelected"></select>
+                <i class="fa-solid fa-right-left" onclick="swap()"></i>
+                <select name="" id="toCurrencySelected"></select>
+            </div>
+            <button id="convert">Convert</button>
+            <div class="transform"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
